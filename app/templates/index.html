@@ -49,6 +49,21 @@
         </div>
       </nav>
 
+      <div class="container">
+          <h1>City Weather</h1>
+
+          <div class="form-group">
+              <form action="" method="POST">
+                  {{ form.hidden_tag() }}
+                  <fieldset>
+                      {{ form.city_name.label }}
+                      {{ form.city_name(class='form-control') }}
+                  </fieldset>
+                  {{ form.submit(class='btn btn-outline-success') }}
+              </form>
+          </div>
+      </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
 </body>
